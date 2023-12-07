@@ -1,0 +1,1 @@
+""" This is a test which is used get the acceleration of the drone. """

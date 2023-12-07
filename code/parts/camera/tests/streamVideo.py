@@ -1,0 +1,1 @@
+""" This is a test which is used to stream a video of the drone's camera. """

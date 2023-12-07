@@ -1,0 +1,1 @@
+""" This is a test which is used to take a picture of from the drone's camera. """
