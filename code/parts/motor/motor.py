@@ -3,3 +3,6 @@
 class Motor:
     def __init__(self):
         pass
+
+    def setVelocity(self):
+        pass
