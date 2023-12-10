@@ -49,7 +49,9 @@ class Drone:
         pass
 
     def getCartesianPosition(self):
-        pass
+        yawAcceleration = 0
+        pitchAcceleration = 0
+        rollAcceleration = 0
 
     def getYaw(self):
         pass
