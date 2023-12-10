@@ -14,7 +14,6 @@ class Drone:
         self.motors = [self.leftBackMotor, self.leftFrontMotor, self.rightBackMotor, self.rightFrontMotor]
         self.motorVelocities = []
 
-        self.acceleration = 0
         self.yaw = 0
         self.pitch = 0
         self.roll = 0
@@ -52,6 +51,7 @@ class Drone:
         yawAcceleration = 0
         pitchAcceleration = 0
         rollAcceleration = 0
+
 
     def getYaw(self):
         pass
