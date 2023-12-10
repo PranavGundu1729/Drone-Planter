@@ -18,8 +18,8 @@ detector = apriltag.Detector(options)
 results = detector.detect(gray)
 print("[INFO] {} total AprilTags detected".format(len(results)))
 
-for r in results:
-	(ptA, ptB, ptC, ptD) = r.corners
+for result in results:
+	(ptA, ptB, ptC, ptD) = result.corners
 	ptB = (int(ptB[0]), int(ptB[1]))
 	ptC = (int(ptC[0]), int(ptC[1]))
 	ptD = (int(ptD[0]), int(ptD[1]))
@@ -28,9 +28,9 @@ for r in results:
 	cv2.line(image, ptB, ptC, (0, 255, 0), 2)
 	cv2.line(image, ptC, ptD, (0, 255, 0), 2)
 	cv2.line(image, ptD, ptA, (0, 255, 0), 2)
-	(cX, cY) = (int(r.center[0]), int(r.center[1]))
+	(cX, cY) = (int(result.center[0]), int(result.center[1]))
 	cv2.circle(image, (cX, cY), 5, (0, 0, 255), -1)
-	tagFamily = r.tag_family.decode("utf-8")
+	tagFamily = result.tag_family.decode("utf-8")
 	cv2.putText(image, tagFamily, (ptA[0], ptA[1] - 15),
 		cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 	print("[INFO] tag family: {}".format(tagFamily))
