@@ -6,3 +6,6 @@ class Motor:
 
     def setVelocity(self):
         pass
+
+    def getVelocity(self):
+        pass

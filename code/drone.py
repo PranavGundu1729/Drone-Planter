@@ -1,4 +1,5 @@
 """ This is the main drone class, which all codes will use to control and operate the drone. """
+import math
 
 class Drone:
     def __init__(self):
@@ -7,7 +8,7 @@ class Drone:
         self.maxThrust = 0
 
         # Motors
-        self.leftBackMotor =  0
+        self.leftBackMotor = 0
         self.leftFrontMotor = 0
         self.rightBackMotor = 0
         self.rightFrontMotor = 0
@@ -48,10 +49,7 @@ class Drone:
         pass
 
     def getCartesianPosition(self):
-        yawAcceleration = 0
-        pitchAcceleration = 0
-        rollAcceleration = 0
-
+        pass
 
     def getYaw(self):
         pass
@@ -87,6 +85,9 @@ class Drone:
         pass
 
     def takeOff(self):
+        pass
+
+    def hover(self):
         pass
 
     def streamVideo(self):
